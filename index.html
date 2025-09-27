@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Showcase</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="image.png" alt="Logo">
+    </a>
+    <h1 class="site-title">My Site</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="brand">☰Menu</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+    </ul>
+    <button class="hamburger">☰</button>
+  </nav>
+
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+</div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h2>This is Hero Section</h2>
+    <p>Description</p>
+    <button class="cta">Get Started</button>
+  </section>
+
+  <!-- Cards / Carousel -->
+  <section class="carousel">
+    <div class="card">
+      <img src="https://picsum.photos/300/200" alt="">
+      <h3>Card Title 1</h3>
+      <p>Card description goes here.</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/301/200" alt="">
+      <h3>Card Title 2</h3>
+      <p>Some text inside another card.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/302/200" alt="">
+      <h3>Card Title 3</h3>
+      <p>Another example card.</p>
+      <button>Explore</button>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://picsum.photos/200/200" alt="">
+      <img src="https://picsum.photos/201/200" alt="">
+      <img src="https://picsum.photos/202/200" alt="">
+      <img src="https://picsum.photos/203/200" alt="">
+    </div>
+  </section>
+
+  <!-- Accordion -->
+  <section class="accordion">
+    <button class="accordion-btn">What is this?</button>
+    <div class="accordion-content">This is an accordion section.</div>
+  </section>
+
+  <!-- Table -->
+  <section class="table-section">
+    <h2>Team Members</h2>
+    <table>
+      <tr><th>Name</th><th>Role</th></tr>
+      <tr><td>Alice</td><td>Developer</td></tr>
+      <tr><td>Bob</td><td>Designer</td></tr>
+    </table>
+  </section>
+
+  <!-- Forms -->
+  <section id="forms" class="forms-section">
+    <h2>Sample Form</h2>
+    <form class="form">
+      <input type="text" placeholder="Text Field">
+      <input type="password" placeholder="Password">
+      <input type="search" placeholder="Search...">
+      <textarea placeholder="Your message"></textarea>
+      <label><input type="checkbox"> Checkbox</label>
+      <label><input type="radio" name="opt"> Option 1</label>
+      <label><input type="radio" name="opt"> Option 2</label>
+      <label class="switch">
+        <input type="checkbox"><span class="slider"></span>
+      </label>
+      <select><option>Dropdown Option</option></select>
+      <input type="date">
+      <div class="form-buttons">
+        <button type="submit" class="primary">Submit</button>
+        <button class="secondary">Cancel</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Dashboard -->
+  <section id="dashboard" class="dashboard">
+    <h2>Dashboard</h2>
+    <div class="panel">Panel Content</div>
+    <canvas id="chart" width="150" height="100"></canvas>
+    <div class="counter">Followers: 2000</div>
+    <div class="stars">⭐⭐⭐⭐☆</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mysite. All Rights Reserved.</p>
+    <div class="pagination">
+      <button>Prev</button>
+      <button>1</button>
+      <button>2</button>
+      <button>Next</button>
+    </div>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </footer>
+</body>
+</html>
